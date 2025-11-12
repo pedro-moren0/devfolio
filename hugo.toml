@@ -1,0 +1,52 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Pedro Moreno Silva'
+theme = 'notmuch'
+
+copyright = "© {year}"
+
+[markup]
+  [markup.highlight]
+    style = 'nord'
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+theme = "auto"
+palette = "nord"
+showThemeNotice = true # or false
+showPostsSummary = false
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "HOME"
+    title = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "about"
+    name = "SOBRE"
+    title = "Sobre"
+    url = "/about"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "posts"
+    name = "POSTS"
+    title = "Posts"
+    url = "/posts"
+
+  [[menu.main]]
+    identifier = "contact"
+    name = "CONTATO"
+    title = "Contato"
+    url = "/contact"
+
+  [[menu.main]]
+    identifier = "tags"
+    name = "TAGS"
+    title = "Tags"
+    url = "/tags"
